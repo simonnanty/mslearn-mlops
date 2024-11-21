@@ -1,0 +1,14 @@
+name: Code checks
+
+on: [pull_request]
+
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Installing necessary packages"
+      - uses: actions/checkout@v3
+      - run: pip install -r requirements.txt
+      - run: echo "Code checks here in next challenge"
+      - run: pytest tests/test_train.py
+      - run: flake8 src
