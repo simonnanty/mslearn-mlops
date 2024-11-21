@@ -1,6 +1,5 @@
 pytest==7.1.2
 mlflow
 pandas
-sklearn
 scikit-learn
 flake8

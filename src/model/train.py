@@ -5,7 +5,6 @@ import glob
 import os
 
 import mlflow
-import numpy as np
 import pandas as pd
 
 from sklearn.linear_model import LogisticRegression
@@ -73,6 +72,7 @@ def parse_args():
 
     # return args
     return args
+
 
 # run script
 if __name__ == "__main__":

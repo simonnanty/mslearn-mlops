@@ -11,4 +11,4 @@ jobs:
       - run: pip install -r requirements.txt
       - run: echo "Code checks here in next challenge"
       - run: pytest tests/test_train.py
-      - run: flake8
+      - run: flake8 src
